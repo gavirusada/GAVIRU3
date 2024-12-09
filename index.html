@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ගවිරුගේ පුද්ගලික වෙබ් අඩවිය</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #2c3e50;
+            background-color: #f0f4f8; /* Softer, more modern background */
+            line-height: 1.6;
+        }
+        header {
+            background-color: #3498db; /* Brighter, more vibrant blue */
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        nav {
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            padding: 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        nav a {
+            margin: 0 1.5rem;
+            text-decoration: none;
+            color: #3498db;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #2980b9;
+            text-decoration: none;
+            border-bottom: 2px solid #3498db;
+        }
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .social-icons {
+            margin-top: 1.5rem;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+        .social-icons a {
+            text-decoration: none;
+            color: white;
+            background-color: #3498db;
+            padding: 0.7rem 1.2rem;
+            border-radius: 25px;
+            transition: background-color 0.3s ease;
+        }
+        .social-icons a:hover {
+            background-color: #2980b9;
+        }
+        .button {
+            display: inline-block;
+            margin: 1rem 0;
+            text-decoration: none;
+            color: white;
+            background-color: #2ecc71;
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #27ae60;
+        }
+        footer {
+            background-color: #3498db;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+            position: relative;
+            width: 100%;
+        }
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        form input, form textarea, form button {
+            width: 100%;
+            padding: 0.8rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        form button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        form button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ගවිරුගේ පුද්ගලික වෙබ් අඩවිය</h1>
+    </header>
+    <nav>
+        <a href="#home">මුල් පිටුව</a>
+        <a href="#projects">ප්‍රජෙක්ට්ස්</a>
+        <a href="#contact">සම්බන්ධ වන්න</a>
+    </nav>
+    <section id="home" class="container">
+        <h2>මගේ ගැන</h2>
+        <p>අපි ගැන කෙටි හැඳින්වීමක් මෙතන ලියන්න. ඔබේ කලාත්මක ගමන සහ අරමුණු දැක්විය හැක.</p>
+        <div class="social-icons">
+            <a href="https://vm.tiktok.com/ZSjwDESes/" target="_blank">TikTok</a>
+            <a href="https://youtube.com/@gavirusandiptha_?si=4WSX5_HuEjujP-1W" target="_blank">YouTube</a>
+            <a href="https://www.facebook.com/share/18L5oKqShQ/" target="_blank">Facebook</a>
+        </div>
+    </section>
+    <section id="projects" class="container">
+        <h2>ප්‍රජෙක්ට්ස්</h2>
+        <p>ඔබේ නිර්මාණ සහ වැඩ මෙතනට එක් කරන්න.</p>
+    </section>
+    <section id="contact" class="container">
+        <h2>සම්බන්ධ වන්න</h2>
+        <p>Phone: <a href="tel:+94702521438" class="button">+94 70 252 1438</a></p>
+        <p>WhatsApp: <a href="https://wa.me/94702521438" target="_blank" class="button">Message on WhatsApp</a></p>
+        <p>Email: <a href="mailto:gavirusandiptha8@gmail.com" class="button">gavirusandiptha8@gmail.com</a></p>
+        <form action="mailto:gavirusandiptha8@gmail.com" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="ඔබේ නම" required>
+            <input type="email" name="email" placeholder="ඔබේ ඊමේල් ලිපිනය" required>
+            <textarea name="message" rows="5" placeholder="ඔබේ පණිවිඩය" required></textarea>
+            <button type="submit">යවන්න</button>
+        </form>
+    </section>
+    <footer>
+        <p>© 2024 ගවිරුගේ පුද්ගලික වෙබ් අඩවිය. සියලු හිමිකම් ඇවිරිණි.</p>
+    </footer>
+</body>
+</html>
